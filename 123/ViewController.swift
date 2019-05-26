@@ -1,18 +1,22 @@
-//
-//  ViewController.swift
-//  123
-//
-//  Created by Bob on 26/05/2019.
-//  Copyright © 2019 Bob. All rights reserved.
-//
-
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
+    
+    private let label = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        self.label.text = "Hello!"
+        self.label.font = .boldSystemFont(ofSize: 24)
+        
+        self.view.addSubview(self.label)
+        
+        self.label.snp.makeConstraints { make in
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
+            make.centerX.equalToSuperview()
+        }
     }
 
 
