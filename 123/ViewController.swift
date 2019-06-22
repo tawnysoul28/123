@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     private let view4: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.green
+        view.backgroundColor = UIColor.white
         
         return view
     }()
@@ -188,7 +188,7 @@ class ViewController: UIViewController {
     
     private let publishButton = PublishButton(title: "Публикации", number: 1000)
     private let subscribersButton = SubscribersButton(title: "Подписчики", number: 500)
-    
+    private let washingtonButton = WashingtonButton(title: "Washington")
     
     //VIEWDIDLOAD
     override func viewDidLoad() {
@@ -216,6 +216,8 @@ class ViewController: UIViewController {
         view22.addSubview(self.subscribersButton)
         
         view3.addSubview(self.lable_v3_1)
+        
+        view4.addSubview(self.washingtonButton)
         
         view5.addSubview(self.btn_v5_1)
         view5.addSubview(self.btn_v5_2)
@@ -454,7 +456,7 @@ final class PublishButton: UIButton {
     
     override var isHighlighted: Bool {
         didSet {
-            let alpha: CGFloat = self.isHighlighted ? 0.3 : 1
+            let alpha: CGFloat = self.isHighlighted ? 0.3 : 1 //не работает. как починить?
             self.number.alpha = alpha
             self.title.alpha = alpha
         }
@@ -536,7 +538,51 @@ final class SubscribersButton: UIButton {
     }
 }
 
-
+// класс стори washington
+final class WashingtonButton: UIButton {
+    
+    private let image = UIImageView(image: UIImage(named: "story_1.png"))
+    private let title = UILabel()
+    
+    override var isHighlighted: Bool {
+        didSet {
+            let alpha: CGFloat = self.isHighlighted ? 0.3 : 1
+            self.image.alpha = alpha
+            self.title.alpha = alpha
+        }
+    }
+    
+    init(title: String) {
+        super.init(frame: .zero)
+        
+        self.image.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        self.addSubview(self.image)
+        self.image.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-4)
+            make.left.equalToSuperview().offset(5)
+            make.centerX.equalToSuperview()
+            make.width.lessThanOrEqualToSuperview().priority(.medium)
+        }
+        
+        self.title.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        self.title.text = title
+        self.title.font = UIFont.systemFont(ofSize: 12)
+        self.addSubview(self.title)
+        self.title.snp.makeConstraints { make in
+            make.bottom.equalToSuperview().offset(5)
+            make.centerX.equalToSuperview()
+            
+            make.width.lessThanOrEqualToSuperview().priority(.medium)
+        }
+        
+        self.snp.makeConstraints { $0.size.equalTo(CGSize(width: 80, height: 80)) }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
 
 
 
