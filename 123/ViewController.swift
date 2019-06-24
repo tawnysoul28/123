@@ -14,61 +14,61 @@ class ViewController: UIViewController {
     
     private let view2: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = .white
         
         return view
     }()
     
     private let view22: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.lightGray
+        view.backgroundColor = .lightGray
         
         return view
     }()
     
     private let view3: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = .white
         
         return view
     }()
     
     private let view4: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = .white
         
         return view
     }()
     
     private let view5: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = .white
         
         return view
     }()
     
     private let view6: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = .white
         
         return view
     }()
     
         private let view61: UIView = {
             let view = UIView()
-            view.backgroundColor = UIColor.gray
+            view.backgroundColor = .gray
         
             return view
         }()
         private let view62: UIView = {
             let view = UIView()
-            view.backgroundColor = UIColor.blue
+            view.backgroundColor = .blue
         
             return view
         }()
         private let view63: UIView = {
             let view = UIView()
-            view.backgroundColor = UIColor.purple
+            view.backgroundColor = .purple
         
             return view
         }()
@@ -232,28 +232,18 @@ class ViewController: UIViewController {
         view7.addSubview(self.btn_v7_3)
         view7.addSubview(self.btn_v7_4)
         view7.addSubview(self.btn_v7_5)
-        
-        // func UPDATEVIEWCONSTRAINTS()
+    }
+    
+    
+    override func updateViewConstraints() {
         let superview = super.view
         
         // VIEW 1 !!!!
         self.view1.snp.makeConstraints { (make) in
-            
-            //        make.centerX.equalTo(self.view.snp.centerX)
-            //        make.centerY.equalTo(self.view.snp.centerY)
-            //        make.size.equalTo(CGSize(width: 200, height: 200))
-            
-            //        make.topMargin.equalTo(self.view).offset(20)
-            //        make.leftMargin.equalTo(self.view).offset(20)
-            //        make.rightMargin.equalTo(self.view).offset(-20)
-            //        make.bottomMargin.equalTo(self.view).offset(-20)
-        
-            //        make.edges.equalTo(self.view.safeAreaLayoutGuide).inset(UIEdgeInsets(top:                20,left: 20,bottom: 20,right: 20))
-            
             make.top.equalTo(superview!.safeAreaLayoutGuide).offset(0)
             make.width.equalTo(superview!.safeAreaLayoutGuide).offset(0)
             make.height.equalTo(superview!.safeAreaLayoutGuide).multipliedBy(0.07)
-            
+        }
         // VIEW 2 !!!!
         self.view2.snp.makeConstraints { (make) in
             make.top.equalTo(self.view1.snp.bottom).offset(0)
@@ -324,7 +314,9 @@ class ViewController: UIViewController {
             make.width.equalTo(superview!.safeAreaLayoutGuide).offset(0)
             make.bottom.equalTo(superview!.safeAreaLayoutGuide).offset(0)
             }
-            
+
+    
+    
         // VIEW 1 COMPONENTS
         // BUTTON_BACK
         self.btn_Back.snp.makeConstraints{ (make) in
@@ -348,15 +340,10 @@ class ViewController: UIViewController {
             }
         
             
-            
         // VIEW 2 COMPONENTS
         // image tawnysoul
         self.image_Tawnysoul.snp.makeConstraints{ (make) in
             make.top.edges.equalTo(self.view2).inset(UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5))
-//            make.centerX.equalTo(view2.snp.centerX).multipliedBy(0.375)
-//            make.centerY.equalTo(view2.snp.centerY)
-//           // make.leading.equalTo(view2.snp.leading).offset(7)
-//            make.size.equalTo(CGSize(width: 110, height: 110))
             }
         
         // VIEW 3 COMPONENTS
@@ -444,9 +431,8 @@ class ViewController: UIViewController {
             
         super.updateViewConstraints()
     }
-        
 }
-}
+
 
 // класс публикации с цифрой
 final class PublishButton: UIButton {
