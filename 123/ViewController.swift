@@ -85,104 +85,104 @@ class ViewController: UIViewController {
     
     //BUTTONS
     //view1 buttons
-    private let btn_Back: UIButton = {
+    private let backBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "back_button.png"), for: .normal)
         return btn
     }()
     
-    private let btn_Tripple_Dots: UIButton = {
+    private let trippleDotsBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "tripple_dots.png"), for: .normal)
         return btn
     }()
     
     //view5 buttons
-    private let btn_v5_1: UIButton = {
+    private let gridBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "toolbar_item_1.png"), for: .normal)
         return btn
     }()
     
-    private let btn_v5_2: UIButton = {
+    private let lineBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "toolbar_item_2.png"), for: .normal)
         return btn
     }()
     
-    private let btn_v5_3: UIButton = {
+    private let notedBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "toolbar_item_3.png"), for: .normal)
         return btn
     }()
     
     //view1 buttons
-    private let btn_v7_1: UIButton = {
+    private let mainBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "tabbar_item_1.png"), for: .normal)
         return btn
     }()
     
-    private let btn_v7_2: UIButton = {
+    private let searchBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "tabbar_item_2.png"), for: .normal)
         return btn
     }()
     
-    private let btn_v7_3: UIButton = {
+    private let publishBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "tabbar_item_3.png"), for: .normal)
         return btn
     }()
     
-    private let btn_v7_4: UIButton = {
+    private let likesBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "tabbar_item_4.png"), for: .normal)
         return btn
     }()
     
-    private let btn_v7_5: UIButton = {
+    private let homeBtn: UIButton = {
         let btn = UIButton()
         btn.setImage(UIImage(named: "tabbar_item_5.png"), for: .normal)
         return btn
     }()
     
     // labels
-    private let lable_Tawnysoul: UILabel = {
-        let lb_Tawnysoul = UILabel()
-        lb_Tawnysoul.textAlignment = .center
-        lb_Tawnysoul.font = UIFont.boldSystemFont(ofSize: 18)
-        lb_Tawnysoul.text = "tawnysoul"
-        return lb_Tawnysoul
+    private let homeTopLabel: UILabel = {
+        let nicknameLabel = UILabel()
+        nicknameLabel.textAlignment = .center
+        nicknameLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        nicknameLabel.text = "tawnysoul"
+        return nicknameLabel
     }()
     
-    private let lable_v3_1: UILabel = {
-        let lb_v3_1 = UILabel()
-        lb_v3_1.numberOfLines = 5
-        lb_v3_1.font = UIFont.systemFont(ofSize: 16)
-        lb_v3_1.text = " siberia, russia. novosibirsk\n          🎶🏂🏌️‍♂️\n soundcloud.com/tawnysoul/chillax-mix-ii\n Подписался(-ась) klim_vitalev\n ПОКАЗАТЬ ПЕРЕВОД"
-        return lb_v3_1
+    private let aboutMeLabel: UILabel = {
+        let infoLabel = UILabel()
+        infoLabel.numberOfLines = 5
+        infoLabel.font = UIFont.systemFont(ofSize: 16)
+        infoLabel.text = " siberia, russia. novosibirsk\n          🎶🏂🏌️‍♂️\n soundcloud.com/tawnysoul/chillax-mix-ii\n Подписался(-ась) klim_vitalev\n ПОКАЗАТЬ ПЕРЕВОД"
+        return infoLabel
     }()
     
     // images
-    private let image_Tawnysoul: UIImageView = {
-        let pic_Tawnysoul = UIImageView(image: UIImage(named: "main_logo.png"))
-        return pic_Tawnysoul
+    private let mainLogo: UIImageView = {
+        let mainPic = UIImageView(image: UIImage(named: "main_logo.png"))
+        return mainPic
     }()
     
-    private let post_1: UIImageView = {
-        let pic_1 = UIImageView(image: UIImage(named: "post_1.png"))
-        return pic_1
+    private let post1: UIImageView = {
+        let pic1 = UIImageView(image: UIImage(named: "post_1.png"))
+        return pic1
     }()
     
-    private let post_2: UIImageView = {
-        let pic_1 = UIImageView(image: UIImage(named: "post_2.png"))
-        return pic_1
+    private let post2: UIImageView = {
+        let pic2 = UIImageView(image: UIImage(named: "post_2.png"))
+        return pic2
     }()
     
-    private let post_3: UIImageView = {
-        let pic_1 = UIImageView(image: UIImage(named: "post_3.png"))
-        return pic_1
+    private let post3: UIImageView = {
+        let pic3 = UIImageView(image: UIImage(named: "post_3.png"))
+        return pic3
     }()
     
     
@@ -206,232 +206,212 @@ class ViewController: UIViewController {
         self.view6.addSubview(self.view63)
         self.view.addSubview(self.view7)
         
-        view1.addSubview(self.btn_Back)
-        view1.addSubview(self.btn_Tripple_Dots)
-        view1.addSubview(self.lable_Tawnysoul)
+        view1.addSubview(self.backBtn)
+        view1.addSubview(self.trippleDotsBtn)
+        view1.addSubview(self.homeTopLabel)
         
-        view2.addSubview(self.image_Tawnysoul)
+        view2.addSubview(self.mainLogo)
         
         view22.addSubview(self.publishButton)
         view22.addSubview(self.subscribersButton)
         
-        view3.addSubview(self.lable_v3_1)
+        view3.addSubview(self.aboutMeLabel)
         
         view4.addSubview(self.washingtonButton)
         
-        view5.addSubview(self.btn_v5_1)
-        view5.addSubview(self.btn_v5_2)
-        view5.addSubview(self.btn_v5_3)
+        view5.addSubview(self.gridBtn)
+        view5.addSubview(self.lineBtn)
+        view5.addSubview(self.notedBtn)
         
-        view61.addSubview(self.post_1)
-        view62.addSubview(self.post_2)
-        view63.addSubview(self.post_3)
+        view61.addSubview(self.post1)
+        view62.addSubview(self.post2)
+        view63.addSubview(self.post3)
         
-        view7.addSubview(self.btn_v7_1)
-        view7.addSubview(self.btn_v7_2)
-        view7.addSubview(self.btn_v7_3)
-        view7.addSubview(self.btn_v7_4)
-        view7.addSubview(self.btn_v7_5)
+        view7.addSubview(self.mainBtn)
+        view7.addSubview(self.searchBtn)
+        view7.addSubview(self.publishBtn)
+        view7.addSubview(self.likesBtn)
+        view7.addSubview(self.homeBtn)
     }
     
-    
     override func updateViewConstraints() {
+        super.updateViewConstraints()
         let superview = super.view
         
         // VIEW 1 !!!!
         self.view1.snp.makeConstraints { (make) in
-            make.top.equalTo(superview!.safeAreaLayoutGuide).offset(0)
-            make.width.equalTo(superview!.safeAreaLayoutGuide).offset(0)
+            make.top.equalTo(superview!.safeAreaLayoutGuide)
+            make.width.equalTo(superview!.safeAreaLayoutGuide)
             make.height.equalTo(superview!.safeAreaLayoutGuide).multipliedBy(0.07)
         }
         // VIEW 2 !!!!
         self.view2.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view1.snp.bottom).offset(0)
+            make.top.equalTo(self.view1.snp.bottom)
             make.width.equalTo(superview!).multipliedBy(0.35)
             make.bottom.equalTo(superview!).multipliedBy(0.3)
         }
         // VIEW 2(2) !!!!
         self.view22.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view1.snp.bottom).offset(0)
+            make.top.equalTo(self.view1.snp.bottom)
             make.right.equalTo(superview!)
             make.width.equalTo(superview!).multipliedBy(0.65)
             make.bottom.equalTo(superview!).multipliedBy(0.3)
         }
-            
         // VIEW 3 !!!!
         self.view3.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view2.snp.bottom).offset(0)
-            make.width.equalTo(superview!).offset(0)
+            make.top.equalTo(self.view2.snp.bottom)
+            make.width.equalTo(superview!)
             make.bottom.equalTo(superview!).multipliedBy(0.5)
             }
-            
         // VIEW 4 !!!!
         self.view4.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view3.snp.bottom).offset(0)
-            make.width.equalTo(superview!).offset(0)
+            make.top.equalTo(self.view3.snp.bottom)
+            make.width.equalTo(superview!)
             make.bottom.equalTo(superview!).multipliedBy(0.65)
             }
-        
         // VIEW 5 !!!!
         self.view5.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view4.snp.bottom).offset(0)
-            make.width.equalTo(superview!).offset(0)
+            make.top.equalTo(self.view4.snp.bottom)
+            make.width.equalTo(superview!)
             make.bottom.equalTo(superview!).multipliedBy(0.72)
             }
-            
         // VIEW 6 !!!!
         self.view6.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view5.snp.bottom).offset(0)
+            make.top.equalTo(self.view5.snp.bottom)
             make.width.equalTo(superview!)
             make.bottom.equalTo(superview!).multipliedBy(0.93)
             }
-            
             // VIEW 6(1) !!!!
             self.view61.snp.makeConstraints { (make) in
-                make.top.equalTo(self.view5.snp.bottom).offset(0)
+                make.top.equalTo(self.view5.snp.bottom)
                 make.left.equalTo(superview!)
                 make.width.equalTo(superview!).multipliedBy(0.33)
                 make.bottom.equalTo(superview!).multipliedBy(0.93)
             }
             // VIEW 6(2) !!!!
             self.view62.snp.makeConstraints { (make) in
-                make.top.equalTo(self.view5.snp.bottom).offset(0)
+                make.top.equalTo(self.view5.snp.bottom)
                 make.left.equalTo(self.view61.snp.right)
                 make.right.equalTo(self.view63.snp.left)
                 make.bottom.equalTo(superview!).multipliedBy(0.93)
             }
             // VIEW 6(3) !!!!
             self.view63.snp.makeConstraints { (make) in
-                make.top.equalTo(self.view5.snp.bottom).offset(0)
+                make.top.equalTo(self.view5.snp.bottom)
                 make.right.equalTo(superview!)
                 make.width.equalTo(superview!).multipliedBy(0.33)
                 make.bottom.equalTo(superview!).multipliedBy(0.93)
             }
-            
         // VIEW 7 !!!!
         self.view7.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view6.snp.bottom).offset(0)
-            make.width.equalTo(superview!.safeAreaLayoutGuide).offset(0)
-            make.bottom.equalTo(superview!.safeAreaLayoutGuide).offset(0)
+            make.top.equalTo(self.view6.snp.bottom)
+            make.width.equalTo(superview!.safeAreaLayoutGuide)
+            make.bottom.equalTo(superview!.safeAreaLayoutGuide)
             }
-
-    
-    
         // VIEW 1 COMPONENTS
         // BUTTON_BACK
-        self.btn_Back.snp.makeConstraints{ (make) in
+        self.backBtn.snp.makeConstraints{ (make) in
             make.topMargin.equalTo(view1.snp.topMargin)
             make.centerY.equalTo(view1.snp.centerY)
             make.leading.equalTo(view1.snp.leading).offset(10)
             make.size.equalTo(CGSize(width: 30, height: 25))
             }
         // BUTTON_TRIPPLE_DOTS
-        self.btn_Tripple_Dots.snp.makeConstraints{ (make) in
+        self.trippleDotsBtn.snp.makeConstraints{ (make) in
             make.topMargin.equalTo(view1.snp.topMargin)
             make.centerY.equalTo(view1.snp.centerY)
             make.rightMargin.equalTo(view1.snp.rightMargin).offset(-10)
             make.size.equalTo(CGSize(width: 30, height: 15))
             }
         // label tawnysoul
-        self.lable_Tawnysoul.snp.makeConstraints{ (make) in
+        self.homeTopLabel.snp.makeConstraints{ (make) in
             make.topMargin.equalTo(view1.snp.topMargin)
             make.centerX.equalTo(view1.snp.centerX)
             make.centerY.equalTo(view1.snp.centerY)
             }
-        
-            
         // VIEW 2 COMPONENTS
         // image tawnysoul
-        self.image_Tawnysoul.snp.makeConstraints{ (make) in
+        self.mainLogo.snp.makeConstraints{ (make) in
             make.top.edges.equalTo(self.view2).inset(UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5))
             }
-        
         // VIEW 3 COMPONENTS
         //lavel v3_1
-        self.lable_v3_1.snp.makeConstraints{ (make) in
-            make.top.equalTo(self.view3.snp.top)
+        self.aboutMeLabel.snp.makeConstraints{ (make) in
             make.centerY.equalTo(self.view3.snp.centerY)
             }
-            
         // VIEW 5 COMPONENTS
         //button v5_1
-            self.btn_v5_1.snp.makeConstraints{ (make) in
+            self.gridBtn.snp.makeConstraints{ (make) in
                 make.top.equalTo(view5.snp.top)
                 make.centerY.equalTo(view5.snp.centerY)
                 make.centerX.equalTo(view61.snp.centerX)
                 make.size.equalTo(CGSize(width: 35, height: 30))
             }
         //button v5_2
-            self.btn_v5_2.snp.makeConstraints{ (make) in
+            self.lineBtn.snp.makeConstraints{ (make) in
                 make.top.equalTo(view5.snp.top)
                 make.centerY.equalTo(view5.snp.centerY)
                 make.centerX.equalTo(view62.snp.centerX)
                 make.size.equalTo(CGSize(width: 35, height: 30))
             }
         //button v5_3
-            self.btn_v5_3.snp.makeConstraints{ (make) in
+            self.notedBtn.snp.makeConstraints{ (make) in
                 make.top.equalTo(view5.snp.top)
                 make.centerY.equalTo(view5.snp.centerY)
                 make.centerX.equalTo(view63.snp.centerX)
                 make.size.equalTo(CGSize(width: 35, height: 30))
             }
-            
         // VIEW 6 COMPONENTS
         //post_1
-        self.post_1.snp.makeConstraints{ (make) in
-            make.top.edges.equalTo(self.view61).inset(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+        self.post1.snp.makeConstraints{ (make) in
+            make.top.edges.equalTo(self.view61)
             }
-            
         //post_2
-        self.post_2.snp.makeConstraints{ (make) in
-            make.top.edges.equalTo(self.view62).inset(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+        self.post2.snp.makeConstraints{ (make) in
+            make.top.edges.equalTo(self.view62)
             }
-            
         //post_3
-        self.post_3.snp.makeConstraints{ (make) in
-            make.top.edges.equalTo(self.view63).inset(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+        self.post3.snp.makeConstraints{ (make) in
+            make.top.edges.equalTo(self.view63)
             }
-            
         // VIEW 7 COMPONENTS
         //button v7_1
-            self.btn_v7_1.snp.makeConstraints{ (make) in
+            self.mainBtn.snp.makeConstraints{ (make) in
                 make.top.equalTo(view7.snp.top)
                 make.centerY.equalTo(view7.snp.centerY)
                 make.centerX.equalTo(view7.snp.centerX).multipliedBy(0.25)
                 make.size.equalTo(CGSize(width: 35, height: 30))
             }
         //button v7_2
-            self.btn_v7_2.snp.makeConstraints{ (make) in
+            self.searchBtn.snp.makeConstraints{ (make) in
                 make.top.equalTo(view7.snp.top)
                 make.centerY.equalTo(view7.snp.centerY)
                 make.centerX.equalTo(view7.snp.centerX).multipliedBy(0.63)
                 make.size.equalTo(CGSize(width: 35, height: 30))
             }
         //button v7_3
-            self.btn_v7_3.snp.makeConstraints{ (make) in
+            self.publishBtn.snp.makeConstraints{ (make) in
                 make.top.equalTo(view7.snp.top)
                 make.centerY.equalTo(view7.snp.centerY)
-                make.centerX.equalTo(view7.snp.centerX).multipliedBy(1)
+                make.centerX.equalTo(view7.snp.centerX)
                 make.size.equalTo(CGSize(width: 35, height: 30))
             }
         //button v7_4
-            self.btn_v7_4.snp.makeConstraints{ (make) in
+            self.likesBtn.snp.makeConstraints{ (make) in
                 make.top.equalTo(view7.snp.top)
                 make.centerY.equalTo(view7.snp.centerY)
                 make.centerX.equalTo(view7.snp.centerX).multipliedBy(1.37)
                 make.size.equalTo(CGSize(width: 35, height: 30))
             }
         //button v7_5
-            self.btn_v7_5.snp.makeConstraints{ (make) in
+            self.homeBtn.snp.makeConstraints{ (make) in
                 make.top.equalTo(view7.snp.top)
                 make.centerY.equalTo(view7.snp.centerY)
                 make.centerX.equalTo(view7.snp.centerX).multipliedBy(1.75)
                 make.size.equalTo(CGSize(width: 35, height: 30))
             }
-            
-        super.updateViewConstraints()
     }
-}
+
 
 
 // класс публикации с цифрой
@@ -524,8 +504,8 @@ final class SubscribersButton: UIButton {
     }
 }
 
-// класс стори washington
-final class WashingtonButton: UIButton {
+    // класс стори washington
+    final class WashingtonButton: UIButton {
     
     private let image = UIImageView(image: UIImage(named: "story_1.png"))
     private let title = UILabel()
@@ -564,75 +544,9 @@ final class WashingtonButton: UIButton {
         
         self.snp.makeConstraints { $0.size.equalTo(CGSize(width: 80, height: 80)) }
     }
-    
-    required init?(coder aDecoder: NSCoder) {
+        
+        required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-////    override func updateViewConstraints() {
-////
-////
-////
-////
-//////            make.centerX.equalTo(self.view.snp.centerX)
-//////            make.centerY.equalTo(self.view.snp.centerY)
-//////            make.size.equalTo(CGSize(width: 200, height: 200))
-////
-//////            make.topMargin.equalTo(self.view).offset(20)
-//////            make.leftMargin.equalTo(self.view).offset(20)
-//////            make.rightMargin.equalTo(self.view).offset(-20)
-//////            make.bottomMargin.equalTo(self.view).offset(-20)
-////        }
-////
-////        super.updateViewConstraints()
-////    }
-////
-////
-////    override func didReceiveMemoryWarning() {
-////        super.didReceiveMemoryWarning()
-////    }
-////
-////}
-////
-////private let label_Tawnysoul = UILabel()
-////private let btn_Back = UIButton()
-////
-////
-////override func viewDidLoad() {
-////    super.viewDidLoad()
-////
-////    self.label_Tawnysoul.text = "tawnysoul"
-////    self.label_Tawnysoul.font = .boldSystemFont(ofSize: 24)
-////
-////    self.view.addSubview(self.label_Tawnysoul)
-////
-////    self.label_Tawnysoul.snp.makeConstraints { make in
-////        make.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
-////        make.centerX.equalToSuperview()
-////
-////
-//
-//
-//
-//
-//        //            self.button_Back.buttonType = "Back"
-//        //            self.btn_Back.font = .boldSystemFont(ofSize: 24)
-//
-//        self.view.addSubview(self.btn_Back)
-//
-//        self.btn_Back.snp.makeConstraints { make in
-//            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
