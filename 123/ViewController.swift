@@ -6,8 +6,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 	static private let kCellIdentifier = "myCellIdentifier"
 	static private let kBlueCellIdentifier = "myBlueCellIdentifier"
 
+	private let model = Model()
 	private let tableView = UITableView(frame: .zero, style: .plain)
-	private let items = ["123", "213", "456", "qwe"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return self.items.count
+		return self.model.itemsCount()
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 			: ViewController.kBlueCellIdentifier
 		let cell = tableView.dequeueReusableCell(withIdentifier: identifier,
 												 for: indexPath)
-		let title = self.items[indexPath.row]
+		let title = self.model.item(at: indexPath)
 		cell.textLabel?.text = title
 		return cell
 	}
@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
 
-		let item = self.items[indexPath.row]
+		let item = self.model.item(at: indexPath)
 		print(">>> touched: \(item)")
 	}
 

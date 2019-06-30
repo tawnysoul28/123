@@ -11,6 +11,8 @@
 		3036576A22C8E428008E44AB /* Kettle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036576922C8E428008E44AB /* Kettle.swift */; };
 		3036577022C8E938008E44AB /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036576F22C8E938008E44AB /* Kitchen.swift */; };
 		3036577222C8FA73008E44AB /* BlueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036577122C8FA73008E44AB /* BlueCell.swift */; };
+		3036577422C90164008E44AB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036577322C90164008E44AB /* Model.swift */; };
+		3036577622C9054A008E44AB /* String+Modified.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036577522C9054A008E44AB /* String+Modified.swift */; };
 		40DB8AFE229A997C00335DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB8AFD229A997C00335DD1 /* AppDelegate.swift */; };
 		40DB8B00229A997C00335DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB8AFF229A997C00335DD1 /* ViewController.swift */; };
 		40DB8B03229A997C00335DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DB8B01229A997C00335DD1 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		3036576922C8E428008E44AB /* Kettle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kettle.swift; sourceTree = "<group>"; };
 		3036576F22C8E938008E44AB /* Kitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen.swift; sourceTree = "<group>"; };
 		3036577122C8FA73008E44AB /* BlueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCell.swift; sourceTree = "<group>"; };
+		3036577322C90164008E44AB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3036577522C9054A008E44AB /* String+Modified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Modified.swift"; sourceTree = "<group>"; };
 		40DB8AFA229A997C00335DD1 /* 123.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 123.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DB8AFD229A997C00335DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40DB8AFF229A997C00335DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				40DB8AFD229A997C00335DD1 /* AppDelegate.swift */,
 				40DB8AFF229A997C00335DD1 /* ViewController.swift */,
 				3036577122C8FA73008E44AB /* BlueCell.swift */,
+				3036577322C90164008E44AB /* Model.swift */,
+				3036577522C9054A008E44AB /* String+Modified.swift */,
 				3036576922C8E428008E44AB /* Kettle.swift */,
 				3036576F22C8E938008E44AB /* Kitchen.swift */,
 				40DB8B01229A997C00335DD1 /* Main.storyboard */,
@@ -215,7 +221,9 @@
 				3036577222C8FA73008E44AB /* BlueCell.swift in Sources */,
 				40DB8B00229A997C00335DD1 /* ViewController.swift in Sources */,
 				3036576A22C8E428008E44AB /* Kettle.swift in Sources */,
+				3036577422C90164008E44AB /* Model.swift in Sources */,
 				3036577022C8E938008E44AB /* Kitchen.swift in Sources */,
+				3036577622C9054A008E44AB /* String+Modified.swift in Sources */,
 				40DB8AFE229A997C00335DD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
